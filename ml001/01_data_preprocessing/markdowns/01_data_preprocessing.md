@@ -24,7 +24,7 @@ y = dataset.iloc[:,3].values
 
 X为除了最后一列的所有数据，y为最后一列(即第3列，因为索引从0开始算)。
 
-![Data.csv_screenshoot](http://pic.data8.cc/Data.csv_screenshoot.jpg)
+![Data.csv_screenshoot](pic/Data.csv_screenshoot.jpg)
 
 
 
