@@ -127,5 +127,5 @@ y = labelencoder_y.fit_transform(y)
 
 
 
-代码github地址：[data_preprocessing_template.py](https://github.com/ElijahMingLiu/ml-learn/blob/master/ml001/data_preprocessing_template.py)
+代码github地址：[data_preprocessing_template.py](https://github.com/ElijahMingLiu/ml-learn/blob/master/ml001/01_data_preprocessing/resources/data_preprocessing_template.py)
 
