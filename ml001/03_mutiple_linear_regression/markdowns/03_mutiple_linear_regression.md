@@ -26,7 +26,7 @@ R&D Spend(研发花费) Administration(管理经费) Marketing Spend(市场花�
 
 要预测的内容为 Profit(盈利)
 
-![dataset_screenshot](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\03_mutiple_linear_regression\markdowns\pic\dataset_screenshot.jpg)
+![dataset_screenshot](pic\dataset_screenshot.jpg)
 
 然后，建造分类变量的dummy variable：
 
@@ -110,7 +110,7 @@ regressor_OLS.summary()
 
 结果显示如下，可看出，x2的p值为0.990，是最大的，且大于0.05(x0是bias，就是上面的const)
 
-![be1](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\03_mutiple_linear_regression\markdowns\pic\be1.jpg)
+![be1](pic\be1.jpg)
 
 将x2删除，继续拟合模型，并查看其p值
 
@@ -122,7 +122,7 @@ regressor_OLS.summary()
 
 结果显示如下，可看出，x1的p值为0.940，是最大的，且大于0.05
 
-![be2](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\03_mutiple_linear_regression\markdowns\pic\be2.jpg)
+![be2](pic\be2.jpg)
 
 
 
@@ -136,13 +136,13 @@ regressor_OLS.summary()
 
 结果显示如下，可看出，x2的p值为0.602，是最大的，且大于0.05
 
-![be3](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\03_mutiple_linear_regression\markdowns\pic\be3.jpg)
+![be3](pic\be3.jpg)
 
 将x2(就是原来的第4个变量)删除，继续拟合模型
 
 结果显示如下，可看出，x2的p值为0.060，还是大于0.05
 
-![be4](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\03_mutiple_linear_regression\markdowns\pic\be4.jpg)
+![be4](pic\be4.jpg)
 
 将x2(即原来的第5个变量)，然后继续拟合
 
@@ -156,7 +156,7 @@ regressor_OLS.summary()
 
 可以发现，第3个变量(R&D Spend)对Profit的影响是最重要的，而且是唯一的预测变量(在SL=0.05的条件下)。
 
-![be5](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\03_mutiple_linear_regression\markdowns\pic\be5.jpg)
+![be5](pic\be5.jpg)
 
 关键词
 
