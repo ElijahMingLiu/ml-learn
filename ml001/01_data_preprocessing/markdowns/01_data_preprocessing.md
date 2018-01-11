@@ -142,5 +142,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 
 
 
-代码github地址：[data_preprocessing_template.py](https://github.com/ElijahMingLiu/ml-learn/blob/master/ml001/01_data_preprocessing/resources/data_preprocessing_template.py)
+代码github地址：[multiple_linear_regression.py](../resources/multiple_linear_regression.py)
 
