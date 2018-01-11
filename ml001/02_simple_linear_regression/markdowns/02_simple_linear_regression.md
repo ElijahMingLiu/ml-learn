@@ -84,27 +84,56 @@ plt.show()
 
 ![visualizing2](C:\Users\Administrator\Dropbox\博客\机器学习-python\02_simple_linear_regression\markdowns\pic\visualizing2.jpg)
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 全部代码:
 
 ```python
+#Data Preprocessing
 
+#Import the library
+import numpy as np
+from matplotlib import pyplot as plt
+import pandas as pd
+
+#Importing the dataset
+dataset = pd.read_csv('Salary_Data.csv')
+# iloc is the class by using which can slice the dataset in which the first is rows and second is columns
+X = dataset.iloc[:,:-1].values
+y = dataset.iloc[:,1].values
+
+#Splitting the dataset into the Training set and Test set
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=1/3, random_state=0 )
+
+#Fitting Simple Linear Regression to the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train,y_train)
+
+#Predicting the Test set results
+y_pred = regressor.predict(X_test)
+
+#Visualizing the Training set results
+plt.scatter(X_train,y_train,color='red')
+plt.plot(X_train,regressor.predict(X_train),color='blue')
+plt.title('Salary vs Experience (Training set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+
+#Visualizing the Test set results
+plt.scatter(X_test,y_test,color='red')
+plt.plot(X_train,regressor.predict(X_train),color='blue')#the line is based on training set so we don't have to replace this by test set
+plt.title('Salary vs Experience (Test set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
 ```
 
 
 
-代码github地址：[xxx.py](xxx)
+代码github地址：[simple_linear_regression.py](../resources/simple_linear_regression.py)
 

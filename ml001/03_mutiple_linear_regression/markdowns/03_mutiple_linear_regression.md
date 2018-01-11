@@ -239,5 +239,5 @@ regressor_OLS.summary()
 
 
 
-代码github地址：[x](x)
+代码github地址：[multiple_linear_regression.py](../resources/multiple_linear_regression.py)
 
