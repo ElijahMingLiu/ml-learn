@@ -8,7 +8,7 @@
 
 一个公司要雇佣某个人，希望根据其之前的职位与等级，确定其月薪。下面的数据集为其资料，2个特征Position(岗位)，Level(等级)，而目标为Salary(月薪)。
 
-![dataset](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\04_polynomial_regression\markdowns\pic\dataset.jpg)
+![dataset](pic/dataset.jpg)
 
 由于每个Position的值都不同，对于分析没有意义，所以不使用其进行预测。
 
@@ -66,7 +66,7 @@ plt.ylabel('Salary')
 plt.show()
 ```
 
-![linear_pic](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\04_polynomial_regression\markdowns\pic\linear_pic.jpg)
+![linear_pic](pic/linear_pic.jpg)
 
 可以看出来，效果并不理想。
 
@@ -83,7 +83,7 @@ plt.ylabel('Salary')
 plt.show()
 ```
 
-![poly_reg_old](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\04_polynomial_regression\markdowns\pic\poly_reg_old.jpg)
+![poly_reg_old](pic/poly_reg_old.jpg)
 
 由于数据点并不密集，所以预测线有点粗糙，那么将数据点密集化，然后再查看预测的效果如何。
 
@@ -104,7 +104,7 @@ plt.ylabel('Salary')
 plt.show()
 ```
 
-![poly_pic](C:\Users\Administrator\Dropbox\博客\ml-learn\ml001\04_polynomial_regression\markdowns\pic\poly_pic.jpg)
+![poly_pic](pic/poly_pic.jpg)
 
 接下来，可以尝试下预测，分别使用线性回归与多项式回归对Level为6.5进行测试
 
